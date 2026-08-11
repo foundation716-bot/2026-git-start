@@ -12,7 +12,7 @@ sequenceDiagram
     participant GitHub as GitHub (원격 저장소)
     participant B as 작업자 B (로컬 저장소)
 
-    Note over A, GitHub, B: 두 작업자가 동일한 README.md 문장을 가지고 시작
+    Note over A, B: 두 작업자가 동일한 README.md 문장을 가지고 시작
     
     A->>A: README.md 같은 문장 수정 및 커밋
     A->>GitHub: git push (작업자 A의 변경 반영)
@@ -32,4 +32,3 @@ sequenceDiagram
     
     A->>GitHub: git fetch origin (최신 결과 가져오기)
     A->>A: git merge origin/main (최종 결과 동기화)
-    A->>A: git merge origin/main (최종 결과 로컬 동기화)[cite: 1]
