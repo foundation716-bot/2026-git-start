@@ -1,5 +1,4 @@
 # 2026-git-start
 
-contents from local computer
+in addition to local git, contents from git hub web
 
-crash between local and github web
